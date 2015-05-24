@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			My First PhoneGap Hello World
+		</title>
+	</head>
+<body>
+	<button id='prependWords'>Append Words</button>
+	<button id='clearWords'>Clear Words</button>
+	<div id='playArea'></div>
+	
+	
+	<script src='js/zepto.min.js'></script>
+	<script src='js/myjs.js'></script>
+	<script>
+		$('#prependWords').click(function() {
+			MyJs.prependWords($('#playArea'));
+		});
+		$('#clearWords').click(function() {
+			$('#playArea').html('');
+		});
+	</script>
+</body>
+</html>
